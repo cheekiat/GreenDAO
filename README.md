@@ -6,7 +6,7 @@ http://greenrobot.org/greendao/
 Who is using greenDAO?
 http://www.appbrain.com/stats/libraries/details/greendao/greendao
 
-# 3 Step setup project
+### 3 Step setup project
 
 Step 1
 ----------------
@@ -73,7 +73,7 @@ public class MyDevOpenHelper extends DaoMaster.DevOpenHelper{
 }
 ```
 
-# Now can start create table and CRUD
+### Now can start create table and CRUD
 
 Create table
 ----------------
