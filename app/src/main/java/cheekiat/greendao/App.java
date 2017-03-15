@@ -21,6 +21,8 @@ public class App extends Application {
         MyDevOpenHelper helper = new MyDevOpenHelper(this, ENCRYPTED ? "notes-db-encrypted" : "notes-db");
         Database db = ENCRYPTED ? helper.getEncryptedWritableDb("super-secret") : helper.getWritableDb();
 
+//        MyDevOpenHelper helper = new MyDevOpenHelper(this, "notes-db-encrypted.db");
+//        Database db = helper.getEncryptedWritableDb("super-secret");
         daoSession = new DaoMaster(db).newSession();
         instance = this;
     }
@@ -30,6 +32,7 @@ public class App extends Application {
     public static App getInstance() {
         return instance;
     }
+
 
 
     public DaoSession getDaoSession() {
