@@ -6,6 +6,10 @@ http://greenrobot.org/greendao/
 Who is using greenDAO?
 http://www.appbrain.com/stats/libraries/details/greendao/greendao
 
+ScreenShot
+----------------
+![ScreenShot](https://github.com/cheekiat/GreenDAO/blob/master/screen%20short.gif)
+
 ### 3 Step setup project
 
 Step 1
