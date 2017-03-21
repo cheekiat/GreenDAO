@@ -95,6 +95,7 @@ Create
 ```
         DaoSession daoSession = (App.getInstance()).getDaoSession();
         NoteDao noteDao = daoSession.getNoteDao();
+        
         Note note = new Note();
         note.text = "add data";
         noteDao.save(note);
@@ -116,6 +117,7 @@ Update
         
         DaoSession daoSession = (App.getInstance()).getDaoSession();
         NoteDao noteDao = daoSession.getNoteDao();
+        
         Note note = noteDao.queryBuilder().where(NoteDao.Properties.Id.eq(id)
         ).unique();
         note.text = "update text column";
@@ -129,6 +131,7 @@ Delete
         
         DaoSession daoSession = (App.getInstance()).getDaoSession();
         NoteDao noteDao = daoSession.getNoteDao();
+        
         QueryBuilder<Note> qb = noteDao.queryBuilder();
         DeleteQuery<Note> bd = qb.where(NoteDao.Properties.Id.eq(id)).buildDelete();
         bd.executeDeleteWithoutDetachingEntities();
