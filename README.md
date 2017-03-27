@@ -16,6 +16,9 @@ Step 1
 ----------------
 Open your build.gradle (Module: app) add
 ```
+apply plugin: 'org.greenrobot.greendao'//Must above apply plugin: 'com.android.application'
+apply plugin: 'com.android.application'
+
 greendao {
     schemaVersion 1
 }
