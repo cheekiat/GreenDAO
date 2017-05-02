@@ -10,9 +10,18 @@ ScreenShot
 ----------------
 ![ScreenShot](https://github.com/cheekiat/GreenDAO/blob/master/screen%20short.gif)
 
-### 3 Step setup project
+### 4 Step setup project
 
 Step 1
+----------------
+Open your root build.gradle add
+```
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
+    }
+```
+
+Step 2
 ----------------
 Open your build.gradle (Module: app) add
 ```
@@ -28,7 +37,7 @@ dependencies {
 }
 ```
 
-Step 2
+Step 3
 ----------------
 Create class for extends Application
 ```
@@ -59,7 +68,7 @@ public class App extends Application {
 }
 ```
 
-Step 3
+Step 4
 ----------------
 Create MyDevOpenHelper class extends DaoMaster.DevOpenHelper for update table
 ```
